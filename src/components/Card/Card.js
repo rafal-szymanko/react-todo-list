@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 
 
 const Card = props => (
-        <div className={styles.component}>
-            <p>{props.title}</p>
-        </div>
+  <div className={styles.component}>
+    <p>{props.title}</p>
+  </div>
 );
 
 Card.propTypes = {
-    text: PropTypes.string,
-  };
+  text: PropTypes.string,
+};
 
 export default Card;
