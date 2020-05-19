@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Column.scss';
 import PropTypes from 'prop-types';
-import Card from '../Card/Card.js'
-import Creator from '../Creator/Creator.js'
-import Icon from '../Icon/Icon.js'
+import Card from '../Card/Card.js';
+import Creator from '../Creator/Creator.js';
+import Icon from '../Icon/Icon.js';
 import { settings } from '../../data/dataStore';
 
 
@@ -14,9 +14,9 @@ class Column extends React.Component {
   }
 
   static propTypes = {
-    text: PropTypes.string,
+    title: PropTypes.string,
+    icon: PropTypes.string,
     cards: PropTypes.array,
-
   }
 
 
@@ -28,9 +28,8 @@ class Column extends React.Component {
           {
             key: state.cards.length ? state.cards[state.cards.length - 1].key + 1 : 0,
             title,
-
-          }
-        ]
+          },
+        ],
       }
     ));
   }
@@ -54,21 +53,3 @@ class Column extends React.Component {
 }
 
 export default Column;
-
-
-
-
-
-// const Column = props => (
-
-//     <section className={styles.component}>
-//         <h2 className={styles.title}>{props.title}</h2>
-//         <Card/>
-//     </section>
-// );
-
-// Column.propTypes = {
-//     text: PropTypes.string,
-//   };
-
-// export default Column;

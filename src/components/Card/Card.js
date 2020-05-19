@@ -10,7 +10,7 @@ const Card = props => (
 );
 
 Card.propTypes = {
-  text: PropTypes.string,
+  title: PropTypes.string,
 };
 
 export default Card;
