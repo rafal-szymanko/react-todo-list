@@ -3,9 +3,9 @@ import styles from './Card.scss';
 import PropTypes from 'prop-types';
 
 
-const Card = props => (
+const Card = ({title = this.props}) => (
   <div className={styles.component}>
-    <p>{props.title}</p>
+    <p>{title}</p>
   </div>
 );
 
