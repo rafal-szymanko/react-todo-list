@@ -11,9 +11,7 @@ const mapStateToProps = (state) => ({
   searchString: getSearchString(state),
   countVisible: countVisibleCards(state),
   countAll: countAllCards(state),
-
 });
-
 
 const mapDispatchToProps = (dispatch) => ({
   changeSearchString: newSearchString => dispatch(createAction_changeSearchString(newSearchString)),
