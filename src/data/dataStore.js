@@ -113,6 +113,18 @@ const lists = [
     description: 'Interesting things I want to check out!',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
+  {
+    id: 'list-2',
+    title: 'Completed <sup>tasks!</sup>',
+    description: 'What have I done so far?',
+    image: 'https://i.postimg.cc/DyBkybxt/schedule-planning-startup-launching-7376.jpg',
+  },
+  {
+    id: 'list-3',
+    title: 'Outstanding <sup>tasks!</sup>',
+    description: 'Tasks that are not yet completed.',
+    image: 'https://i.postimg.cc/C5STdMGr/book-4126483-1280.jpg',
+  },
 ];
 
 const columns = [
