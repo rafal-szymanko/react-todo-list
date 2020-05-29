@@ -4,9 +4,9 @@ import {getColumnsForList, createActionAddColumn} from '../../redux/ColumnRedux.
 
 const mapStateToProps = (state, props) => {
   const id = props.match.params.id;
+  console.log(props);
   const filteredLists = state.lists.filter(list => list.id == id);
   const listParams = filteredLists[0] || {};
-
   return {
     ...listParams,
     columns: getColumnsForList(state, id),

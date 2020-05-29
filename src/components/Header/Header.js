@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Header.scss';
 import Icon from '../Icon/Icon';
 import Container from '../Container/Container';
+import Search from '../Search/Search';
 import {headerContents} from '../../data/dataStore';
 import { NavLink, Link } from 'react-router-dom';
 
@@ -15,6 +16,7 @@ class Header extends React.Component {
             <Link to={headerContents.navLink.home.link} className={styles.logo}>
               <Icon name= {headerContents.icon} />
             </Link>
+            <Search/>
             <nav>
               <NavLink exact to={headerContents.navLink.home.link}>{headerContents.navLink.home.text}</NavLink>
               <NavLink exact to={headerContents.navLink.info.link}>{headerContents.navLink.info.text}</NavLink>

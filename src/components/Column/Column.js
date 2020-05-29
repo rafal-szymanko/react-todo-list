@@ -8,7 +8,6 @@ import { settings } from '../../data/dataStore';
 
 
 const Column = ({title, icon, cards, addCard }) => {
-
   return (
     <section className={styles.component}>
       <h2 className={styles.title}>{title}</h2>
